@@ -17,6 +17,6 @@ class DateTimeParameter(viewsets.ModelViewSet):
 
 
 
-def health_check(request):
+def status_check(request):
     data = {"status": "ok"}
     return JsonResponse(data)
