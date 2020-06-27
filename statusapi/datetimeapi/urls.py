@@ -7,7 +7,7 @@ router.register('api', views.DateTimeParameter)
 
 urlpatterns = [
     path('',include(router.urls)),
-    path('ping'/',views.ping', name='ping''),
+    path('ping/',views.ping, name='ping'),
 ]
 
 
