@@ -6,10 +6,8 @@ router = routers.DefaultRouter()
 router.register('api', views.DateTimeParameter)
 
 urlpatterns = [
-    # path('parameter/',views.parameter_list),
-    # path('parameter/<int:pk>/',views.parameter_detail),
     path('',include(router.urls)),
-    path('',views.health_check, name='health_check'),
+    path('',views.health_check, name='status_check'),
 ]
 
 
