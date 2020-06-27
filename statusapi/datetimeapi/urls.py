@@ -7,7 +7,7 @@ router.register('api', views.DateTimeParameter)
 
 urlpatterns = [
     path('',include(router.urls)),
-    path('',views.health_check, name='status_check'),
+    path('',views.status_check, name='status_check'),
 ]
 
 
