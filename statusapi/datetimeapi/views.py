@@ -15,6 +15,6 @@ class DateTimeParameter(viewsets.ModelViewSet):
 
 
 
-def ping'(request):
+def ping(request):
     data = {"status": "ok"}
     return JsonResponse(data)
